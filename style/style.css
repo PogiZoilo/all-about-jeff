@@ -284,12 +284,12 @@ span {
 }
 .myLifeStory-wrapper {
     display: grid;
-    grid-template-columns: repeat(2,4fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 4rem;
 }
 .myLifeStory-item {
     min-height: 550px;
-    max-width: 610px;
+    max-width: 510px;
     background: var(--bg-color);
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     border-radius: 2rem;
@@ -301,7 +301,7 @@ span {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 3.5rem;
+    gap: 2.5rem;
     color: white;
     transition: 0.4s ease-in-out;
 }
@@ -589,20 +589,9 @@ span {
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
-    .child-madara img {
-        margin-left: 90%;
-        
-    }
 }
 
 @media(max-width:1155px) {
-    .logo {
-        font-size: 2rem;
-        color: var(--text-color);
-        font-weight: 800;
-        cursor: pointer;
-        transition:.3s ease;
-    }
     .navbar a {
         font-size: 1.5rem;
         color: var(--text-color);
@@ -653,15 +642,12 @@ span {
     .navbar {
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 50%;
+        left: 170px;
+        width: 65%;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
         border-radius: 0 0 2rem 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        border-right: 2px solid var(--main-color);
         display: none;
     }
     .navbar.active {
@@ -672,6 +658,12 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
+        text-align: center;
+    }
+    .navbar a::after,
+    .navbar a::before {
+        width: 80%;
+        margin-left: 10%;
     }
     .home {
         flex-direction: column-reverse;
@@ -706,12 +698,55 @@ span {
         grid-template-columns: repeat(1,1fr);
     }
 }
-@media(max-width:616px) {
+@media(max-width:669px) {
     .footer ul li a {
         font-size: 16px;
     }
     .favorites {
         padding: 80px 8px;
     }
-    
+    .navbar {
+        left: 140px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 5rem;
+    }
+    .home-img img {
+        width: 50vw;
+    }
+    .hobbies-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+    .navbar {
+        left: 120px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .home h1 {
+        font-size: 4rem;
+    }
+    .hobbies-box {
+        height: auto;
+        padding: 2rem;
+    }
+    .navbar {
+        left: 100px;
+    }
 }

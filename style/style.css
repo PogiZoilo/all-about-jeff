@@ -290,8 +290,8 @@ span {
 .myLifeStory-item {
     min-height: 550px;
     max-width: 610px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 3px solid rgba(238, 238, 238, 0.2);
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 60px 90px;
@@ -312,7 +312,7 @@ span {
 
 .myLifeStory-item:hover {
     transform: translateY(10px)scale(1.03);
-    box-shadow: 0 0 50px #4E89AE;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .myLifeStory-item img:hover {
@@ -355,17 +355,17 @@ span {
 }
 .favorites-content {
     background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
     margin-top: 7.2rem;
     padding: 30px 50px;
     border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .favorites-content:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px var(--main-color);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
 }
 .favorites-content h3 {
     font-size: 20px;
@@ -413,10 +413,10 @@ span {
 }
 .hobbies-box {
     background-color: var(--second-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     color: white;
     height: 580px;
     border-radius: 3rem;
-    border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -424,7 +424,7 @@ span {
     background: transparent;
     color: white;
     transition: scale(1.03);
-    box-shadow: 0 0 45px #111111;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .hobbies-box .hobbies-info {
     display: flex;
@@ -478,7 +478,7 @@ span {
     min-height: 550px;
     max-width: 950px;
     background: var(--second-bg-color);
-    border: 3px solid rgba(238, 238, 238, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     border-radius: 2rem;
     margin: 0 2rem;
     padding: 50px 130px;
@@ -490,10 +490,16 @@ span {
     text-align: center;
     gap: 1.5rem;
     color: white;
+    transition: 0.3s all ease-in-out;
+}
+.friend-item:hover {
+    max-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .friend-item img:hover {
     transform: translateY(10px)scale(1.03);
     box-shadow: 0 0 25px var(--bg-color);
+    
 }
 .friends-box h2 {
     font-size: 7.5rem;

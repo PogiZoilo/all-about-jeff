@@ -743,9 +743,11 @@ span {
         font-size: 4rem;
     }
     .hobbies-box {
+        min-height: 500px;
         height: auto;
         padding: 2rem;
     }
+
     .navbar {
         left: 100px;
     }
